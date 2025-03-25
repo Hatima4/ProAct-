@@ -21,44 +21,18 @@ export default function Home() {
               transition={{ delay: 0.2, duration: 0.5 }}
               className="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-8"
             >
-              <svg
-                className="w-10 h-10 text-black"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+              <img
+                src="/logo.png"
+                alt="ProAct+ Logo"
+                className="w-12 h-12 object-contain"
+              />
             </motion.div>
-            <h1 className="text-7xl font-bold mb-6 leading-tight">
-              Proactive IT Solutions
-            </h1>
+            <h1 className="text-7xl font-bold mb-6 leading-tight">ProAct+</h1>
             <p className="text-xl mb-8 max-w-2xl text-gray-300 leading-relaxed">
-              Empowering businesses with intelligent IT management and
-              monitoring. Stay ahead of issues before they impact your
-              operations.
+              AI-Powered Task Scheduling & Focus Management. Stay productive,
+              eliminate distractions, and achieve your goals with intelligent
+              task prioritization.
             </p>
-            <div className="flex gap-4">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Start Monitoring
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors"
-              >
-                View Dashboard
-              </motion.button>
-            </div>
           </motion.div>
         </div>
       </section>
@@ -69,10 +43,10 @@ export default function Home() {
         <div className="container mx-auto px-6 relative">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: "99.9%", label: "System Uptime" },
-              { number: "< 15min", label: "Response Time" },
-              { number: "1000+", label: "Servers Monitored" },
-              { number: "24/7", label: "Active Monitoring" },
+              { number: "1000+", label: "Users" },
+              { number: "Top 6", label: "App Olympics" },
+              { number: "24/7", label: "Task Tracking" },
+              { number: "100%", label: "Focus Mode" },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -102,33 +76,33 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
-              Why Choose ProAct+?
+              Key Features
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Advanced monitoring and management solutions that keep your IT
-              infrastructure running smoothly and efficiently.
+              Transform your productivity with AI-driven task management and
+              focus tools.
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: "Predictive Analysis",
+                title: "AI-Powered Scheduling",
                 description:
-                  "Detect and prevent issues before they impact your business operations",
-                icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+                  "Intelligent task prioritization and scheduling based on your goals and preferences",
+                icon: "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2",
               },
               {
-                title: "Real-time Monitoring",
+                title: "Focus Mode",
                 description:
-                  "Continuous system monitoring with instant alerts and notifications",
+                  "Block distracting apps and maintain concentration during task execution",
                 icon: "M13 10V3L4 14h7v7l9-11h-7z",
               },
               {
-                title: "Smart Automation",
+                title: "Progress Tracking",
                 description:
-                  "Automated responses and fixes for common IT issues",
-                icon: "M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4",
+                  "Real-time progress monitoring and achievement tracking for your daily goals",
+                icon: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z",
               },
             ].map((feature, index) => (
               <motion.div
@@ -176,36 +150,36 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
-              Our Solutions
+              Core Features
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Comprehensive IT monitoring and management solutions designed for
-              modern enterprises.
+              Comprehensive productivity tools designed to enhance your daily
+              workflow.
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                title: "Infrastructure Monitoring",
+                title: "Task Management",
                 description:
-                  "Complete visibility into your IT infrastructure with advanced monitoring capabilities.",
+                  "Organize and prioritize your tasks with AI-powered scheduling and reminders.",
                 features: [
-                  "Server Health Monitoring",
-                  "Network Performance",
-                  "Resource Utilization",
-                  "Capacity Planning",
+                  "Smart Task Prioritization",
+                  "Calendar Integration",
+                  "Task Reminders",
+                  "Progress Tracking",
                 ],
               },
               {
-                title: "Intelligent Management",
+                title: "Focus Enhancement",
                 description:
-                  "Smart management solutions that help you maintain peak system performance.",
+                  "Maintain concentration and eliminate distractions during work sessions.",
                 features: [
-                  "Automated Issue Resolution",
-                  "Predictive Maintenance",
-                  "Performance Optimization",
-                  "Security Monitoring",
+                  "App Blocking",
+                  "Focus Timer",
+                  "Distraction Prevention",
+                  "Session Analytics",
                 ],
               },
             ].map((solution, index) => (
